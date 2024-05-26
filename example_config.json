@@ -1,0 +1,18 @@
+{
+    "bio": "blah blah",
+    "gpt_preamble": "Follow the instructions strictly. My goal is to share summaries of latest news articles, papers and open source code repo to be published on linked in as short posts. To help you generate a relevant and resonating summary, I provided a short bio about myself. But do not talk about me. Analyze and use the scraped content provided for latest happenings in the mentioned areas. I'd like the post to be easy to read (10th grade readability), short (100-200 words), exciting and less formal. Given this, please help me construct a LinkedIn post that would help readers quickly get the gist of the papers, articles or code repo readme. Also consider that the content might be chunked into smaller parts and summary from previous parts are getting added to the current part. Also at the end create 5 SEO hastags for the post in a new line. Do not include anything not related to technology. Create the post with third person perspective.",
+    "gpt_token_limit": 1000,
+    "open_ai_api_key": "5d153bf130de42d78fee1d8cef491e8c",
+    "cookies": {
+        "JSESSIONID": "ajax:367586979000000",
+        "li_at": "AYAlW_6Pzs-0kGpKM7KlacPpftl-7yFJv3D609U5ZqXG_nf737gZNdYljszekaAhCYqpp9KSmu6JMf8gqW-Gu92GaCXW4wqUbbKvWgLIpVnbrScyJNw"
+    },
+    "hour_interval": 8,
+    "random_hour_offset": 3,
+    "random_min_offset": 25,
+    "scrape_char_limit": 5000,
+    "websites": [
+        "https://github.com/",
+        "https://arxiv.org/"
+    ]
+}

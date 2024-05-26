@@ -165,3 +165,6 @@ test/
 
 # azuregpt script
 azuregpt.py
+
+#other
+.idea/
