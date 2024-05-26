@@ -16,7 +16,7 @@ def main_task():
     main()
 
     # After the main task is done, schedule the next task
-    schedule_next_task()
+    # schedule_next_task()
 
 
 def schedule_next_task():

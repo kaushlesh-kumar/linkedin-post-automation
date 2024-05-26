@@ -96,7 +96,7 @@ class LinkedIn:
         except requests.exceptions.RequestException as e:
             custom_print(f"Error checking LinkedIn session: {e}")
 
-    def post(self, text, media=None):
+    def post(self, text, selected_url, media=None):
 
         if media is None:
             media = []
@@ -105,7 +105,7 @@ class LinkedIn:
             "visibleToConnectionsOnly": False,
             "externalAudienceProviders": [],
             "commentaryV2": {
-                "text": text,
+                "text": text + "\n\n" + selected_url,
                 "attributes": []
             },
             "origin": "FEED",
@@ -131,7 +131,7 @@ class LinkedIn:
         except requests.exceptions.RequestException as e:
             custom_print(f"Error posting to LinkedIn: {e}")
 
-    def post_file(self, text, file_path_list=None):
+    def post_file(self, text,selected_url, file_path_list=None):
 
         # TODO: find all mediaUploadType's. Determine use-case. Store in fs or stream?
 
@@ -170,7 +170,7 @@ class LinkedIn:
 
             # image is uploaded. now post.
             self.post(
-                text,
+                text + "\n\n" + selected_url,
                 [
                     # video category has different keys
                     { "category": MEDIA_CATEGORY.IMAGE.name, "mediaUrn": data["urn"], "tapTargets": [] }
